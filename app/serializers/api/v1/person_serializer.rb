@@ -3,5 +3,5 @@ class Api::V1::PersonSerializer < Api::V1Serializer
     :person
   end
   
-  attributes :id, :name, :description
+  attributes :id, :name, :description, :slug
 end
