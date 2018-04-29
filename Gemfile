@@ -18,18 +18,18 @@ gem 'puma', '~> 3.7'
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 gem 'rack-cors'
-
 # Preventing DDoS
 gem 'rack-attack'
-
 # Serializer gems
 gem 'active_model_serializers'
+# Multitenancy gem
+gem 'rails_multitenant'
+# FriendlyId is the “Swiss Army bulldozer” of slugging and permalink plugins for ActiveRecord. It allows you to create pretty URL’s and work with human-friendly strings as if they were numeric ids for ActiveRecord models.
+gem 'friendly_id', '~> 5.1.0'
 
 group :development, :test do
   # Use RSpec for specs
