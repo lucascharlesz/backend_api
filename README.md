@@ -1,7 +1,6 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+After downloading the project, you must run rails dev:setup in order to get the database populated with placeholder info for testing.
 
 Things you may want to cover:
 

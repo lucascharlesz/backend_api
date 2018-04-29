@@ -23,11 +23,23 @@ gem 'puma', '~> 3.7'
 # gem 'capistrano-rails', group: :development
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
-# gem 'rack-cors'
+gem 'rack-cors'
+
+# Preventing DDoS
+gem 'rack-attack'
+
+# Serializer gems
+gem 'active_model_serializers'
 
 group :development, :test do
+  # Use RSpec for specs
+  gem 'rspec-rails', '>= 3.5.0'
+  # Use Factory Girl for generating random test data
+  gem 'factory_girl_rails'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  # A library for generating fake data such as names, addresses, and phone numbers.
+  gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
 end
 
 group :development do
