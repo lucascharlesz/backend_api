@@ -27,11 +27,13 @@ gem 'rack-attack'
 # Serializer gems
 gem 'active_model_serializers'
 # Multitenancy gem
-gem 'rails_multitenant'
+gem 'apartment'
 # FriendlyId is the “Swiss Army bulldozer” of slugging and permalink plugins for ActiveRecord. It allows you to create pretty URL’s and work with human-friendly strings as if they were numeric ids for ActiveRecord models.
 gem 'friendly_id', '~> 5.1.0'
 # Flexible authentication solution for Rails with Warden. http://blog.plataformatec.com.br/tag/…
 gem 'devise'
+# Doorkeeper is an OAuth 2 provider for Rails.
+gem 'doorkeeper'
 
 group :development, :test do
   # Use RSpec for specs

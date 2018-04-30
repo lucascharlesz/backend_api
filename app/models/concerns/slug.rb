@@ -5,6 +5,6 @@ module Slug
     extend FriendlyId
     friendly_id :name, use: :slugged
 
-    field :slug, type: String
+    attribute :slug, type: String
   end
 end
