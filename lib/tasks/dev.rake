@@ -11,6 +11,7 @@ namespace :dev do
     Organization.create(name: 'Dreamsoft')
 
     Apartment::Tenant.create('dreamsoft')
+    
     Apartment::Tenant.switch('dreamsoft') do
       User.create!(email: 'lucas@dreamsoft.com', 
                   password: '12345678', 
